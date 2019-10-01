@@ -1,0 +1,19 @@
+server:
+  port: 9000
+
+logging:
+  level:
+    root: info
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test;MODE=MYSQL
+    username: sa
+    password: sa
+
+    schema:
+      - classpath:init/schema.sql
+      - classpath:init/data.sql
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
