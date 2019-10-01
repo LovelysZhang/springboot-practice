@@ -4,12 +4,14 @@ server:
 logging:
   level:
     root: info
+    # 打印 SQL 语句，mapper所处的包
+    com.albatross.dao: debug
 spring:
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:test;MODE=MYSQL
-    username: sa
-    password: sa
+    username:
+    password:
 
     schema:
       - classpath:init/schema.sql

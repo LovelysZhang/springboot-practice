@@ -8,5 +8,15 @@ Springboot练习
 
 1.2、拦截器分页（pageHelper）
 
+1.3、拦截器简单实现权限验证
 
-## 二、AOP、。。。。
+- https://github.com/hawkingfoo/springboot-interceptor
+- https://blog.csdn.net/f59130/article/details/79059227
+
+## 二、AOP。。。。
+
+
+
+## 笔记补充
+
+autowire 和 resource 的实现和区别
