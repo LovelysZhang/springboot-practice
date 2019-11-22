@@ -6,6 +6,7 @@
     <modules>
         <module>springboot-mybatis-h2</module>
         <module>springboot-qmq-provider</module>
+        <module>springboot-qmq-consumer</module>
     </modules>
 
     <parent>
