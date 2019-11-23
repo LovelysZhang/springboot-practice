@@ -9,8 +9,8 @@ import qunar.tc.qmq.producer.MessageProducerProvider;
  * @author non human
  * on 2019/11/22
  */
-@Configuration
-public class QmqMessage extends MessageProducerProvider {
+@Configuration("QmqMessage")
+public class QmqMessage {
 
 
 }

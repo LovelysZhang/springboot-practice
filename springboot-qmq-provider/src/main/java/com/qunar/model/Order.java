@@ -1,7 +1,7 @@
 package com.qunar.model;
 
 import lombok.*;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * order
@@ -10,10 +10,10 @@ import lombok.extern.log4j.Log4j;
  * on 2019/11/22
  */
 @Data
-@Log4j
+@Slf4j
 @NoArgsConstructor
 @AllArgsConstructor
 public class Order {
 
-    private String name;
+    private String orderName;
 }

@@ -10,8 +10,10 @@ import qunar.tc.qmq.consumer.annotation.QmqConsumer;
  */
 @Service
 public class OrderChangedListener {
-    @QmqConsumer(subject = "", consumerGroup = "", executor = "")
+
+    @QmqConsumer(subject = "order.changed", consumerGroup = "group", executor = "qmqExecutor")
     public void onMessage(Message message) {
-        String orderName = message.getStringProperty("name");
+        String orderName = message.getStringProperty("order");
+        System.out.println(orderName);
     }
 }
