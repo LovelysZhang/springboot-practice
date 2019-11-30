@@ -1,4 +1,4 @@
-package com.qunar.model;
+package com.qmq.model;
 
 import lombok.*;
 import lombok.extern.slf4j.Slf4j;

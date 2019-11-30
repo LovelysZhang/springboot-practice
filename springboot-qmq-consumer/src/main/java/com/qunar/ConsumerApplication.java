@@ -1,4 +1,4 @@
-package com.qunar;
+package com.qmq;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

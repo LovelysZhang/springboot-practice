@@ -1,7 +1,6 @@
-package com.qunar.bean;
+package com.qmq.bean;
 
 import org.springframework.context.annotation.Configuration;
-import qunar.tc.qmq.producer.MessageProducerProvider;
 
 /**
  * qmq bean

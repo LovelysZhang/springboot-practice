@@ -1,4 +1,4 @@
-package com.qunar.oder;
+package com.qmq.oder;
 
 import org.springframework.stereotype.Service;
 import qunar.tc.qmq.Message;

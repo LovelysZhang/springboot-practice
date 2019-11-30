@@ -1,7 +1,7 @@
-package com.qunar;
+package com.qmq;
 
-import com.qunar.model.Order;
-import com.qunar.oder.OrderService;
+import com.qmq.model.Order;
+import com.qmq.oder.OrderService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
