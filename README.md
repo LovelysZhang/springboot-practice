@@ -7,6 +7,13 @@ Springboot练习
 
 #### 1.1、Springboot初始化执行SQL
 
+```yaml
+spring:
+  datasource:
+    schema:
+          - classpath:init/schema.sql
+          - classpath:init/data.sql
+```
 #### 1.2、拦截器分页（pageHelper）
 
 - http://www.imooc.com/article/263101
@@ -22,6 +29,14 @@ Springboot练习
 
 ### 2、AOP。。。。
 
+## 二、springboot-qmq-*
+qmq练习，搭建工程没成功
+
+
+## 三、springboot-protocol-buffer
+主要在maven中添加protobuf 插件，在maven中运行`.proto`文件，生成类文件
+
+protobuf 的语法参考 官网
 
 
 ## 笔记补充

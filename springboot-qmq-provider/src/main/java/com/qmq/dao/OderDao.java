@@ -1,4 +1,4 @@
-package com.qunar.dao;
+package com.qmq.dao;
 
 /**
  * @author non human

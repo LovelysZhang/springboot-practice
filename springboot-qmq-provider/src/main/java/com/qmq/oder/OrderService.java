@@ -1,13 +1,10 @@
-package com.qunar.oder;
+package com.qmq.oder;
 
-import com.qunar.bean.QmqMessage;
-import com.qunar.model.Order;
+import com.qmq.model.Order;
 import org.springframework.stereotype.Service;
 import qunar.tc.qmq.Message;
 import qunar.tc.qmq.MessageSendStateListener;
 import qunar.tc.qmq.producer.MessageProducerProvider;
-
-import javax.annotation.Resource;
 
 /**
  * @author non human
