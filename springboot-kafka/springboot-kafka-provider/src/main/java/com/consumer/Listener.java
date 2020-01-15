@@ -16,7 +16,7 @@ public class Listener {
         System.out.println("listenT1收到消息！！   topic:>>>  " + cr.topic() + "    key:>>  " + cr.key() + "    value:>>  " + cr.value());
     }
 
-    @KafkaListener(topics = "topic2")
+    @KafkaListener(topics = "customerCountries")
     public void listenT2(ConsumerRecord<?, ?> cr) throws Exception {
         System.out.println("listenT2收到消息！！   topic:>>>  " + cr.topic() + "    key:>>  " + cr.key() + "    value:>>  " + cr.value());
     }

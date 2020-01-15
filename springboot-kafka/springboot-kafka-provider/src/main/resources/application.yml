@@ -1,11 +1,10 @@
 spring:
-  kafka:     # 指定kafka 代理地址，可以多个
-    # bootstrap-servers: http://172.17.0.4:2181
+  kafka:     # 指定kafka 代理地址，可以多个,一个失效可以重试其他的IP
     bootstrap-servers:
-      [
-        172.17.0.5:9092,
-        localhost:9092
-      ]
+      - localhost:9092
+#      [
+#        localhost:9092
+#      ]
     consumer:   # 指定默认消费者group id
       group-id: myGroup
     template:    # 指定默认topic id
