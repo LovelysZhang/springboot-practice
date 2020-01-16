@@ -14,7 +14,10 @@ spring:
           - classpath:init/schema.sql
           - classpath:init/data.sql
 ```
-#### 1.2、拦截器分页（pageHelper）
+#### 1.2、分页
+
+##### 1.2.1、定义page类实现
+##### 1.2.2、拦截器分页（pageHelper）
 
 - http://www.imooc.com/article/263101
 
@@ -26,6 +29,13 @@ spring:
 #### 1.4、h2数据库配置
 
 - https://blog.csdn.net/c4jem/article/details/80455502
+
+#### 1.5、mybatis逆向工程（MBG）
+
+[link1](https://blog.csdn.net/eson_15/article/details/51694684)
+
+[link2](https://juejin.im/post/5b44ae64f265da0f8145ccab)
+
 
 ### 2、AOP。。。。
 
