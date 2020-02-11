@@ -1,0 +1,46 @@
+server:
+  port: 9001
+
+logging:
+  level:
+    root: info
+    # 打印 SQL 语句，mapper所处的包
+    com.cache.dao: debug
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test;MODE=MYSQL
+    username:
+    password:
+    hikari:
+      #   连接池中允许的最大连接数。缺省值：10；推荐的公式：((core_count * 2) + effective_spindle_count)
+      maximum-pool-size: 100
+      #  一个连接idle状态的最大时长（毫秒），超时则被释放（retired），缺省:10分钟
+      idleTimeout: 600000
+      # 连接只读数据库时配置为true， 保证安全
+      read-only: false
+      #   等待连接池分配连接的最大时长（毫秒），超过这个时长还没可用的连接则发生SQLException， 缺省:30秒
+      connectionTimeout: 30000
+      #  一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒，
+      #  参考MySQL wait_timeout参数（show variables like '%timeout%';）
+      maxLifetime: 1800000
+    schema:
+      - classpath:init/schema.sql
+      - classpath:init/springboot_cache.sql
+      - classpath:init/data.sql
+  h2:
+    # h2 web consloe 是一个数据库GUI管理应用，程序运行时，会自动启动h2 web consloe
+    console:
+      # 开启 h2 web console ，默认开启
+      enabled: true
+      # 设置访问路径 /h2-console 访问 h2 web
+      path: /h2-console
+      settings:
+        # 配置后 h2 web console 就可以在远程访问，否则只能在本机访问
+        web-allow-others: true
+mybatis:
+  # 指定mapper文件
+  mapper-locations: classpath:mapper/*.xml
+
+# debug 为true时，可以生成自动配置报告
+debug: true

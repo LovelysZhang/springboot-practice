@@ -9,6 +9,8 @@
         <module>springboot-qmq-consumer</module>
         <module>springboot-protocol-buffer</module>
         <module>springboot-kafka</module>
+        <module>springboot-cache</module>
+        <module>springboot-rabbitmq</module>
     </modules>
 
     <parent>
