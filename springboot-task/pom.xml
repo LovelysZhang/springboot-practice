@@ -9,11 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springboot-es</artifactId>
+    <artifactId>springboot-task</artifactId>
 
-    <properties>
-        <jest.version>6.3.1</jest.version>
-    </properties>
     <dependencies>
         <!--web mvc-->
         <dependency>
@@ -31,16 +28,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-elasticsearch</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
-        <!--jest client 操作ES-->
-        <!--jest 的版本需要根据安装的ES确定。大版本要一直6.x.x 对应 6.x.x-->
-        <dependency>
-            <groupId>io.searchbox</groupId>
-            <artifactId>jest</artifactId>
-        </dependency>
-
     </dependencies>
-
 </project>

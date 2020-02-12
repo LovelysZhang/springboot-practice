@@ -12,6 +12,8 @@
         <module>springboot-cache</module>
         <module>springboot-rabbitmq</module>
         <module>springboot-es</module>
+        <module>springboot-task</module>
+        <module>springboot-spring-security</module>
     </modules>
 
     <parent>
