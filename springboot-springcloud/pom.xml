@@ -10,6 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>springboot-springcloud</artifactId>
+    <packaging>pom</packaging>
 
+    <modules>
+        <module>springcloud-eureka-server</module>
+        <module>springcloud-eureka-discovery</module>
+        <module>springcloud-eureka-client</module>
+    </modules>
 
 </project>
