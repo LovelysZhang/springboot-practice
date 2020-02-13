@@ -1,0 +1,14 @@
+server:
+  port: 8100
+dubbo:
+  application:
+    name: dubbo-auto-configure-consumer
+  registry:
+    address: zookeeper://localhost:12181
+  protocol:
+    name: dubbo
+    port: 12345
+  consumer:
+    # check 为 false 的话那么 consumer 启动时不会去检查 provider 启动与否
+    check: false
+    timeout: 6000
