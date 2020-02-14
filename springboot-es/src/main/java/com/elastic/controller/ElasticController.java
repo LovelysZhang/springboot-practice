@@ -27,6 +27,7 @@ public class ElasticController {
 
     @GetMapping("/save")
     public void save(String id) {
+        // 请求 http://localhost:9200/zzz/book/1 查看是否保存成功
         bookRepository.save(new Book(id));
     }
 
