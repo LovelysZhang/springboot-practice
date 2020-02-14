@@ -11,6 +11,9 @@
 
 https://www.jianshu.com/p/adb9ae0db193
 
+https://blog.csdn.net/Singularinty/article/details/80826882
+
+https://blog.csdn.net/J080624/article/details/81004207
 -----
 
 1、怎样使用springboot init工具创建一个springboot子模块
