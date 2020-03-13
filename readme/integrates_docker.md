@@ -59,6 +59,9 @@ maven命令：（清除上次打包，再重新打包）
 `clean package -Dmaven.test.skip=true`
 
 
+参考
+
+https://www.jianshu.com/p/0dcc2e43963b
 
 
 

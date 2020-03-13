@@ -25,8 +25,16 @@
 
     <build>
         <plugins>
+            <!--不需要，父pom有-->
+            <!--<plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>-->
+
+
+            <!--方法1-->
             <!--复制jar包到指定目录-->
-            <plugin>
+            <!--<plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <executions>
                     <execution>
@@ -42,6 +50,58 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>-->
+
+
+            <!--另外一种方式-->
+            <!--
+            传统过程中，打包、部署、上传Linux、编写Dockerfile、构建镜像、创建容器。
+            在持续集成中，下过吗一般使用maven编译打包，然后生成镜像，通过镜像上线，提高效率。
+            同时能够快速扩容，快速回滚，相当方便。docker-maven-plugin 插件就是其中一种，通过简单配置，自动生成镜像推送仓库
+
+            使用maven命令打包项目，并构建docker镜像
+            mvn clean package docker:build
+            -->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.2.2</version>
+
+                <configuration>
+                    <!--image name-->
+                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+                    <!--tag-->
+                    <imageTags>
+                        <imageTag>latest</imageTag>
+                    </imageTags>
+                    <!--基础镜像jdk1.8-->
+                    <baseImage>java</baseImage>
+                    <!--maintainer-->
+                    <maintainer>xxx@xx.com</maintainer>
+                    <!--切换到root目录-->
+                    <workdir>/var</workdir>
+                    <cmd>java -version</cmd>
+                    <entryPoint>["java","-jar","${project.build.finalName}.jar"]</entryPoint>
+
+
+                    <!--指定Dockerfile地址-->
+                    <!--<dockerDirectory>${project.basedir}/src/main/resources/docker</dockerDirectory>-->
+
+
+                    <!--指定docker api 地址-->
+                    <dockerHost>tcp://localhost:2375</dockerHost>
+
+                    <!--复制jar包到docker容器指定目录的配置，ADD-->
+                    <resources>
+                        <resource>
+                            <targetPath>/var</targetPath>
+                            <!--指定需要复制的目录，${project.build.directory}表示target目录-->
+                            <directory>${project.build.directory}</directory>
+                            <!--指定需要复制的文件，${project.build.finalName}.jar打包后的jar包名-->
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                </configuration>
             </plugin>
         </plugins>
     </build>
