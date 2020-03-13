@@ -113,6 +113,22 @@
                         </resource>
                     </resources>
                 </configuration>
+
+                <!--
+                    第二种方法扩展配置
+                    绑定Docker命令道Maven的各个阶段，可以把Docker的build、tag、push，分别绑定到maven的package、deploy阶段
+                    只需要执行mvn deploy就可以完成整个build、tag、push操作。
+                -->
+                <!--当执行mvn package时，执行mvn clean package docker:build-->
+                <executions>
+                    <execution>
+                        <id>build-image</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
