@@ -23,6 +23,11 @@
         </dependency>
     </dependencies>
 
+    <properties>
+        <!--自定义镜像前缀-->
+        <docker.image.prefix>springboot</docker.image.prefix>
+    </properties>
+
     <build>
         <plugins>
             <!--不需要，父pom有-->
@@ -61,6 +66,7 @@
 
             使用maven命令打包项目，并构建docker镜像
             mvn clean package docker:build
+            在target文件中查看生产的dockerfile文件
             -->
             <plugin>
                 <groupId>com.spotify</groupId>
@@ -74,26 +80,31 @@
                     <imageTags>
                         <imageTag>latest</imageTag>
                     </imageTags>
+
+                    <!--Dockerfile-->
                     <!--基础镜像jdk1.8-->
                     <baseImage>java</baseImage>
                     <!--maintainer-->
                     <maintainer>xxx@xx.com</maintainer>
                     <!--切换到root目录-->
                     <workdir>/var</workdir>
-                    <cmd>java -version</cmd>
+                    <cmd>["java","-version"]</cmd>
                     <entryPoint>["java","-jar","${project.build.finalName}.jar"]</entryPoint>
 
 
-                    <!--指定Dockerfile地址-->
+                    <!--可以指定Dockerfile，就不需要用上面那些构建镜像标签了-->
                     <!--<dockerDirectory>${project.basedir}/src/main/resources/docker</dockerDirectory>-->
 
 
                     <!--指定docker api 地址-->
-                    <dockerHost>tcp://localhost:2375</dockerHost>
+                    <dockerHost>http://localhost:2375</dockerHost>
 
-                    <!--复制jar包到docker容器指定目录的配置，ADD-->
+
                     <resources>
+                        <!--首先mvn打包后，将jar包拷贝到根目录/docker/var（/target/docker/var）-->
+                        <!--然后复制jar包到docker容器指定目录，ADD /var/xxx.jar /var/-->
                         <resource>
+                            <!--targetPath指定本地jar包、容器jar包位置-->
                             <targetPath>/var</targetPath>
                             <!--指定需要复制的目录，${project.build.directory}表示target目录-->
                             <directory>${project.build.directory}</directory>
