@@ -1,3 +1,5 @@
+[toc]
+## 方法1
 1、打开docker的设置界面，找到General,在里面找到
 *Expose daemon on tcp://localhost:2375 without TLS*选项，打上勾，
 即可进行本地或远程API调用。
@@ -64,8 +66,8 @@ maven命令：（清除上次打包，再重新打包）
 https://www.jianshu.com/p/0dcc2e43963b
 
 
-
-
+## 方法2
+记录在[pmo](springboot-docker/pom.xml)
 
 
 

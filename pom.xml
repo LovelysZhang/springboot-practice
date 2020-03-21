@@ -17,6 +17,7 @@
         <module>springboot-springcloud</module>
         <module>springboot-qmq</module>
         <module>springboot-docker</module>
+        <module>springboot-spring-core</module>
     </modules>
 
     <parent>
