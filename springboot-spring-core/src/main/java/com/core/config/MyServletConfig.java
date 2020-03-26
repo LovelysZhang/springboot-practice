@@ -26,7 +26,8 @@ public class MyServletConfig {
     //注册三大组件
     @Bean
     public ServletRegistrationBean<Servlet> myServlet(){
-        // 请求映射的路径就可以访问嵌入的servlet
+        // 请求映射的路径就可以访问自定义的servlet
+        // 拦截器只会处理DispatcherServlet处理的url，访问/myServlet时，自定义的Servlet处理了请求，此时拦截器不处理
         ServletRegistrationBean<Servlet> registrationBean = new ServletRegistrationBean<>(new MyServlet(),"/myServlet");
         return registrationBean;
     }
