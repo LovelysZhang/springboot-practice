@@ -1,6 +1,6 @@
 package com.core;
 
-import com.core.interceptor.MyWebConfig;
+import com.core.config.MyWebConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
