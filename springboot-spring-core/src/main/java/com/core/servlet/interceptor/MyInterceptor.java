@@ -1,6 +1,5 @@
-package com.core.interceptor;
+package com.core.servlet.interceptor;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 

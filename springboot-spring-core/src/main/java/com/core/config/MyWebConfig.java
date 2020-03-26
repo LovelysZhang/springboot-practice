@@ -1,6 +1,6 @@
 package com.core.config;
 
-import com.core.interceptor.MyInterceptor;
+import com.core.servlet.interceptor.MyInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
