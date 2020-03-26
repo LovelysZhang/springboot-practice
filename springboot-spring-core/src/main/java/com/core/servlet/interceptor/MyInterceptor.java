@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * 拦截器
  * 静态资源放置位置 \src\main\webapp
+ *
+ * 登录拦截器
+ * 拦截器做好后需要注册进MVC中，同时做好排除
  * @author non human
  * on 2020/3/18
  */
