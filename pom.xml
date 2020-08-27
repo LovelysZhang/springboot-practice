@@ -18,6 +18,7 @@
         <module>springboot-qmq</module>
         <module>springboot-docker</module>
         <module>springboot-spring-core</module>
+        <module>springboot-shardingjdbc</module>
     </modules>
 
     <parent>
