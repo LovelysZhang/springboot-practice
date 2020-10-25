@@ -20,6 +20,7 @@
         <module>springboot-spring-core</module>
         <module>springboot-shardingjdbc</module>
         <module>springboot-spring</module>
+        <module>springboot-spring-feature</module>
     </modules>
 
     <parent>
