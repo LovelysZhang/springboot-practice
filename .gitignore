@@ -19,6 +19,7 @@ target/
 *.iml
 *.ipr
 catalina.base*
+logPath*
 
 ### NetBeans ###
 /nbproject/private/
