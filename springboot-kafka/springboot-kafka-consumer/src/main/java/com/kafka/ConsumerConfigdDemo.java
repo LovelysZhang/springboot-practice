@@ -14,7 +14,7 @@ import java.util.Properties;
  * on 2020/1/15
  */
 @Slf4j
-public class ConsumerConfig {
+public class ConsumerConfigdDemo {
     public static void main(String[] args) {
         Properties properties = new Properties();
         properties.put("bootstrap.servers", "localhost:9092");

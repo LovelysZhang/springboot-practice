@@ -11,12 +11,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class Listener {
 
-    @KafkaListener(topics = "topic1")
+    // @KafkaListener(topics = "topic1")
     public void listenT1(ConsumerRecord<?, ?> cr) throws Exception {
         System.out.println("listenT1收到消息！！   topic:>>>  " + cr.topic() + "    key:>>  " + cr.key() + "    value:>>  " + cr.value());
     }
 
-    @KafkaListener(topics = "customerCountries")
+    // @KafkaListener(topics = "customerCountries")
     public void listenT2(ConsumerRecord<?, ?> cr) throws Exception {
         System.out.println("listenT2收到消息！！   topic:>>>  " + cr.topic() + "    key:>>  " + cr.key() + "    value:>>  " + cr.value());
     }
