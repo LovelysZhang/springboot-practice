@@ -7,7 +7,7 @@ import qunar.tc.qmq.MessageSendStateListener;
 import qunar.tc.qmq.producer.MessageProducerProvider;
 
 /**
- * @author non human
+ * @author lovely
  * on 2019/11/22
  */
 @Service

@@ -3,12 +3,12 @@ package com.elastic.controller;
 import com.elastic.bean.Book;
 import com.elastic.repositiry.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
+import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author non human
+ * @author lovely
  * on 2020/2/12
  */
 @RestController
@@ -19,7 +19,7 @@ public class ElasticController {
     private final BookRepository bookRepository;
 
     @Autowired
-    ElasticsearchTemplate elasticsearchTemplate;
+    ElasticsearchRestTemplate elasticsearchTemplate;
 
     public ElasticController(BookRepository bookRepository) {
         this.bookRepository = bookRepository;

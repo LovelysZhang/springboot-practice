@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 自定义rabbitmq 的 配置
  *
- * @author non human
+ * @author lovely
  * on 2020/2/11
  */
 @Configuration

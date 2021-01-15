@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 /**
  * kafka消费者
  *
- * @author hello.z
+ * @author lovely
  * on 2020/10/26
  */
 @Slf4j

@@ -9,7 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 /**
  * SpringSecurity配置类
  *
- * @author non human
+ * @author lovely
  * on 2020/2/12
  */
 @EnableWebSecurity

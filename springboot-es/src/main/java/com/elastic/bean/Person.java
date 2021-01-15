@@ -1,7 +1,7 @@
 package com.elastic.bean;
 
 /**
- * @author non human
+ * @author lovely
  * on 2020/2/11
  */
 public class Person {

@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * redis 配置
  *
- * @author non human
+ * @author lovely
  * on 2020/2/9
  */
 @Configuration

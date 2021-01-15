@@ -4,7 +4,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 
 /**
- * @author non human
+ * @author lovely
  * on 2020/2/11
  */
 @Service

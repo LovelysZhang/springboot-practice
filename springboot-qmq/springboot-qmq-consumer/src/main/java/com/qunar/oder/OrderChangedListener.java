@@ -5,7 +5,7 @@ import qunar.tc.qmq.Message;
 import qunar.tc.qmq.consumer.annotation.QmqConsumer;
 
 /**
- * @author non human
+ * @author lovely
  * on 2019/11/22
  */
 @Service

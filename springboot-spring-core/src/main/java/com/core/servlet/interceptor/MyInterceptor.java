@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * 登录拦截器
  * 拦截器做好后需要注册进MVC中，同时做好排除
- * @author non human
+ * @author lovely
  * on 2020/3/18
  */
 public class MyInterceptor implements HandlerInterceptor {

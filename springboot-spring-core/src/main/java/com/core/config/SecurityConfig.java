@@ -4,7 +4,7 @@ package com.core.config;
 /**
  * 自定义的安全配置
  *
- * @author non human
+ * @author lovely
  * on 2020/3/26
  */
 public class SecurityConfig {}

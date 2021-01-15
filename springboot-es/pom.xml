@@ -50,6 +50,7 @@
         <dependency>
             <groupId>io.searchbox</groupId>
             <artifactId>jest</artifactId>
+            <version>${jest.version}</version>
         </dependency>
 
     </dependencies>

@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import javax.annotation.Resource;
 
 /**
- * @author non human
+ * @author lovely
  * on 2019/11/22
  */
 @SpringBootApplication

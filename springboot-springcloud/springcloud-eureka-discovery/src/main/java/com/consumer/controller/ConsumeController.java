@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * Spring cloud 是通过轻量级 http 进行通信
  *
- * @author non human
+ * @author lovely
  * on 2020/2/14
  */
 @RestController

@@ -2,8 +2,8 @@ package com.config.patition;
 
 import org.apache.kafka.clients.producer.Partitioner;
 import org.apache.kafka.common.Cluster;
+import org.apache.kafka.common.InvalidRecordException;
 import org.apache.kafka.common.PartitionInfo;
-import org.apache.kafka.common.record.InvalidRecordException;
 import org.apache.kafka.common.utils.Utils;
 
 import java.util.List;
@@ -17,7 +17,7 @@ import java.util.Map;
  * 可能因此出现存储空间不足、处理缓慢等问题。我们需要给Banana 分配单独的分区，然后使用散列分区算法
  * 处理其他账号。
  *
- * @author non human
+ * @author lovely
  * on 2020/1/15
  */
 public class BananaPartition implements Partitioner {

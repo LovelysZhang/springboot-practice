@@ -8,12 +8,13 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import java.util.StringJoiner;
 
 /**
- * @author non human
+ * @author lovely
  * on 2020/2/11
  */
 @Getter
 @Setter
-@Document(indexName = "zzz", type = "book")
+// @Document(indexName = "zzz", type = "book")
+@Document(indexName = "zzz")
 public class Book {
     @Id
     private String id;

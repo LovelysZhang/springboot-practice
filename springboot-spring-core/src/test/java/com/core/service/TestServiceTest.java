@@ -1,11 +1,12 @@
 package com.core.service;
 
 import com.core.BaseTest;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
 
 import javax.annotation.Resource;
 
-import static org.junit.Assert.*;
+
 
 public class TestServiceTest extends BaseTest {
 

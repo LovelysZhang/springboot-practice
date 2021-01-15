@@ -1,7 +1,7 @@
 package com.dubbo.api.service;
 
 /**
- * @author non human
+ * @author lovely
  * on 2020/2/13
  */
 public interface TicketService {

@@ -1,8 +1,8 @@
 package com.amqp;
 
 import com.rabbitmq.SpringBootAmqpApplication;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+
+import org.junit.jupiter.api.Test;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,10 +14,10 @@ import java.util.HashMap;
 /**
  * 改进的消息队列协议
  * rabbitMQ
- * @author non human
+ * @author lovely
  * on 2020/2/11
  */
-@RunWith(SpringRunner.class)
+
 @SpringBootTest(classes = SpringBootAmqpApplication.class)
 public class AmqpMessage {
     @Autowired

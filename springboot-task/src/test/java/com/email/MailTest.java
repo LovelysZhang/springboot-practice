@@ -1,25 +1,23 @@
 package com.email;
 
 import com.task.SpringBootTaskApplication;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
-import org.springframework.mail.javamail.MimeMailMessage;
 import org.springframework.mail.javamail.MimeMessageHelper;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
-import java.io.File;
 
 /**
- * @author non human
+ * @author lovely
  * on 2020/2/12
  */
-@RunWith(SpringRunner.class)
+@Slf4j
+
 @SpringBootTest(classes = SpringBootTaskApplication.class)
 public class MailTest {
 
@@ -57,5 +55,16 @@ public class MailTest {
 //        helper.addAttachment("",new File());
 
         mailSender.send(message);
+    }
+
+    @Test
+    public void test() {
+        String[] s = new String[]{"a", "b"};
+        log.info("======>{}", (Object) s);
+        aa("a");
+    }
+
+    private void aa(String u, String... un) {
+        log.info("un={}", (Object) un);
     }
 }

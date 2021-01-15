@@ -5,24 +5,21 @@ import io.searchbox.core.DocumentResult;
 import io.searchbox.core.Index;
 import io.searchbox.core.Search;
 import io.searchbox.core.SearchResult;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
 
 /**
- * @author non human
+ * @author lovely
  * on 2020/2/11
  */
-@RunWith(SpringRunner.class)
 @SpringBootTest(classes = SpringBootElasticSearchApplication.class)
 public class JestTest {
 
-    @Autowired
-    JestClient jestClient;
+    // @Autowired
+    // JestClient jestClient;
 
     private void executeCommand(Index index) {
 
@@ -38,12 +35,12 @@ public class JestTest {
                 .build();
         // 构建一个索引功能
         Index index = new Index.Builder(article).index("novel").type("swordsman").build();
-        try {
-            DocumentResult result = jestClient.execute(index);
-            System.out.println(result);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        // try {
+            // DocumentResult result = jestClient.execute(index);
+            // System.out.println(result);
+        // } catch (IOException e) {
+        //     e.printStackTrace();
+        // }
         // 检查是否存储成功 http://localhost:9200/novel/swordsman/1
     }
 
@@ -59,11 +56,11 @@ public class JestTest {
                 "}";
         // 构建搜索功能
         Search search = new Search.Builder(json).addIndex("novel").addType("swordsman").build();
-        try {
-            SearchResult result = jestClient.execute(search);
-            System.out.println(result);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        // try {
+        //     SearchResult result = jestClient.execute(search);
+        //     System.out.println(result);
+        // } catch (IOException e) {
+        //     e.printStackTrace();
+        // }
     }
 }

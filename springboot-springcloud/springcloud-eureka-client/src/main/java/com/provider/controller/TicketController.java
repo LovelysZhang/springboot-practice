@@ -9,7 +9,7 @@ import java.util.Random;
 
 /**
  * Spring cloud 通过轻量级http 进行通信的
- * @author non human
+ * @author lovely
  * on 2020/2/14
  */
 @RestController

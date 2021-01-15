@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * qmq bean
  *
- * @author non human
+ * @author lovely
  * on 2019/11/22
  */
 @Configuration("QmqMessage")

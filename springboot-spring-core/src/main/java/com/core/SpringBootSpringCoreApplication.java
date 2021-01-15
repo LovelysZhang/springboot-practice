@@ -1,15 +1,13 @@
 package com.core;
 
-import com.core.config.MyWebConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Import;
 
 /**
  * @Configuration:指明当前类是一个配置类，用来代替@ImportResource的注解和Spring的配置文件
  *
  *
- * @author non human
+ * @author lovely
  * on 2020/3/19
  */
 @SpringBootApplication

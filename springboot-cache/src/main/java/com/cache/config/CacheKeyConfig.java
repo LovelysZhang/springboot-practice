@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 /**
  * 自定义key生成器
- * @author non human
+ * @author lovely
  * on 2020/2/9
  */
 @Configuration
