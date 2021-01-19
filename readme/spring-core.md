@@ -1,6 +1,17 @@
 # Spring核心原理
 ## Spring
 ### IOC/DI
+注入bean的方式
+- 1、包扫描
+- 2、@bean注解
+- 3、@import、ImportSelector、ImportBeanDefinitionRegistrar
+- 4、FactoryBean
+
+bean的声明周期
+
+创建--》初始化--》销毁
+### 赋值
+
 
 ### AOP
 

@@ -1,4 +1,4 @@
-package com.core.config;
+package com.core.config.condition;
 
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;

@@ -1,6 +1,5 @@
-package com.core.config;
+package com.core.config.condition;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.Resource;
 import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.core.type.ClassMetadata;

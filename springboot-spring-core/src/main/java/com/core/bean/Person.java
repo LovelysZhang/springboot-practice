@@ -1,4 +1,4 @@
-package com.core.model;
+package com.core.bean;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
