@@ -2,16 +2,14 @@ package com.elastic.repositiry;
 
 import com.elastic.SpringBootElasticSearchApplication;
 import com.elastic.bean.Item;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@RunWith(SpringRunner.class)
+
 @SpringBootTest(classes = SpringBootElasticSearchApplication.class)
 public class ItemRepositoryTest {
     @Autowired
@@ -23,6 +21,7 @@ public class ItemRepositoryTest {
                 "小米", 3499.00, "http://image.zq.com/13123.jpg");
         itemRepository.save(item);
     }
+
     @Test
     public void indexList() {
         List<Item> list = new ArrayList<>();
