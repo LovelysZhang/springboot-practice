@@ -14,6 +14,8 @@ bean的声明周期
 
 
 ### AOP
+- 切面应用 `LogAspects.class`
+- aop 源码分析 `@EnableAspectJAutoProxy`
 
 ### beanFactory 和 factoryBean
 
