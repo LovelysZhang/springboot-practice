@@ -1,5 +1,5 @@
 //=========================================BidRequest======================================
-package BaiduNativeBid;
+package com.bid;
 
 message BidRequest {
   //请求id

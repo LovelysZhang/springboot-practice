@@ -42,6 +42,9 @@ bean的声明周期
 ### 参考
 https://mp.weixin.qq.com/s/jwJtTl5A_TL6jBmwlQNqCQ
 
+## Spring Spel
+Spring 表达式语言 (SpEL)
+
 ----
 [Spring boot web app项目](https://www.javatt.com/p/28742)
 

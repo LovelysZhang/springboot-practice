@@ -23,7 +23,6 @@ import java.util.EventListener;
 @Configuration
 public class MyServletConfig {
 
-    //注册三大组件
     @Bean
     public ServletRegistrationBean<Servlet> myServlet(){
         // 请求映射的路径就可以访问自定义的servlet
