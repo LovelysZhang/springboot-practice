@@ -1,7 +1,6 @@
 package com.core.service.impl;
 
 import com.core.service.TestService;
-import org.springframework.stereotype.Service;
 
 /**
  * @author lovely
