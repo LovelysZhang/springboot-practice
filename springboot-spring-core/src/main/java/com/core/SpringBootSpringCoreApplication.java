@@ -3,8 +3,6 @@ package com.core;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.Collections;
-
 /**
  * @author lovely
  * on 2020/3/19
@@ -15,8 +13,6 @@ import java.util.Collections;
 public class SpringBootSpringCoreApplication {
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(SpringBootSpringCoreApplication.class);
-        app.setDefaultProperties(Collections.singletonMap("server.port", "8888"));
-        app.run(args);
-        // SpringApplication.run(SpringBootSpringCoreApplication.class);
+        SpringApplication.run(SpringBootSpringCoreApplication.class);
     }
 }
