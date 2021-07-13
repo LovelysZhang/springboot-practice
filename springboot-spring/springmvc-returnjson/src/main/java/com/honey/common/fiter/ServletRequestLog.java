@@ -27,5 +27,9 @@ public class ServletRequestLog extends OncePerRequestFilter {
         System.out.println("request.getServletPath() = " + request.getServletPath());
 
         System.out.println("request.getMethod() = " + request.getMethod());
+
+
+        // 向下执行
+        filterChain.doFilter(request, response);
     }
 }

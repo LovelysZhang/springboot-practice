@@ -23,7 +23,7 @@ public class HelloResultController {
     private static final HashMap<String, Object> INFO;
 
     static {
-        INFO = new HashMap<String, Object>();
+        INFO = new HashMap<>();
         INFO.put("name", "galaxy");
         INFO.put("age", "70");
     }
